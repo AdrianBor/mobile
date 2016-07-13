@@ -51,11 +51,9 @@ class App extends Component {
         return (
 
           <ScrollView style={styles.scene}>
-          <StatusBar barStyle="light-content" />
+            <StatusBar barStyle="light-content" />
             {getContentView()}
-
-            <Image source={{uri: 'http://www.blackwall.co/style/img/clouds.png'}} style={styles.stars} />
-
+            <Image source={require('image!stars2')} />
           </ScrollView>
         )
     }
@@ -128,9 +126,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(37, 37, 37, 1)',
   },
   stars: {
-    flex:0,
-    width: null,
-    height: null,
-    resizeMode: 'cover'
   },
 });

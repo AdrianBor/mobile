@@ -15,7 +15,7 @@ class EventListItem extends Component {
     const { event } = this.props;
 
     return (
-
+      <TouchableOpacity>
       <View style={styles.container}>
 
       <View style={styles.circle}/>
@@ -26,6 +26,7 @@ class EventListItem extends Component {
           {event.subtitle}
         </Text>
       </View>
+      </TouchableOpacity>
     );
   }
 }
@@ -47,9 +48,9 @@ const styles = StyleSheet.create({
     flex: 1,
     marginBottom: 1,
     paddingTop: 22,
-    paddingRight: 20,
+    paddingRight: 10,
     paddingLeft: 60,
-    paddingBottom: 13,
+    paddingBottom: 22,
   },
   title: {
     fontFamily: 'Helvetica',
